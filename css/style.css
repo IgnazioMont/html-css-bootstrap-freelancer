@@ -7,8 +7,13 @@
     text-align: center;
     color: white;
 }
-.about, .contact {
+.about, 
+.contact {
     padding: 48px 0;
+}
+.about .container, 
+.contact .container {
+    padding: 0 60px;
 }
 
 
@@ -40,6 +45,7 @@ main .about p {
 .contact .centered {
     text-align: center;
 }
+/* List client info */
 .contact ul {
     list-style-type: none;
     text-decoration: none;
@@ -47,4 +53,13 @@ main .about p {
 }
 .contact ul li {
     padding: 15px 0;
+    border-bottom: 1px solid gray;
+}
+.contact ul li:last-child {
+    padding-bottom: 100px;
+}
+/* Button */
+.contact .btn-primary {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }
