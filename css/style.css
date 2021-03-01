@@ -1,10 +1,34 @@
-.jumbotron {
+/* COMMON */
+.star_line {
+    padding: 20px 0;
+}
+.text-centered {
     background-color: #1abc9c;
     text-align: center;
+    color: white;
+}
+
+
+/* HEADER */
+header .menu, .burger {
+    text-align: right;
 }
 .jumbotron p {
     font-size: 15px;
 }
-.jumbotron .star_line {
-    padding: 20px 0;
+
+
+/* MAIN */
+/* Portfolio section */
+main .portfolio {
+    text-align: center;
+}
+/* box imgs */
+main .boxes {
+    height: 80px;
+}
+
+/* About section */
+main .about {
+    padding: 48px 0;
 }
