@@ -1,0 +1,10 @@
+.jumbotron {
+    background-color: #1abc9c;
+    text-align: center;
+}
+.jumbotron p {
+    font-size: 15px;
+}
+.jumbotron .star_line {
+    padding: 20px 0;
+}
