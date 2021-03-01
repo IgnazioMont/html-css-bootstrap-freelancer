@@ -7,6 +7,9 @@
     text-align: center;
     color: white;
 }
+.about, .contact {
+    padding: 48px 0;
+}
 
 
 /* HEADER */
@@ -29,6 +32,19 @@ main .boxes {
 }
 
 /* About section */
-main .about {
-    padding: 48px 0;
+main .about p {
+    text-align: left;
+}
+
+/* Contact section */
+.contact .centered {
+    text-align: center;
+}
+.contact ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+.contact ul li {
+    padding: 15px 0;
 }
