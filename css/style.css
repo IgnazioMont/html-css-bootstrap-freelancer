@@ -38,7 +38,7 @@ h3 {
 }
 .line {
     border: 1px solid;
-    width: 150px;
+    width: 120px;
     margin-bottom: 6px;
 }
 
@@ -97,16 +97,20 @@ main .boxes {
     margin-top: 20px;
 }
 
-/* Contact section */
-
-/* List client info *//* 
-.contact .list-inline li {
-    padding: 15px 0;
-    border-bottom: 1px solid gray;
+/* Form section */
+#contact-info input, 
+#contact-info textarea {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-radius: 0;
 }
-.contact .list-inline li:last-child {
-    padding-bottom: 100px;
-} */
+#contact-info input::placeholder,
+#contact-info textarea::placeholder {
+    color: #536270;
+}
+
 /* Button */
 .contact button {
     background-color: #1abc9c;

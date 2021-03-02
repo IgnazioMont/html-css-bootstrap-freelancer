@@ -130,7 +130,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- About -->
@@ -165,36 +164,37 @@
         </section>
 
         <!-- Contact me -->
-        <section class="contact text-center">
+        <section class="contact">
             <div class="container">
                 <!-- Title centered -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2>Contact me!</h2>
-                        <!-- Star + line -->
-                        <ul class="star_line list-inline"> 
-                            <li class="line"></li>
-                            <li><i class="fas fa-star"></i></li> 
-                            <li class="line"></li>
-                        </ul>
-                    </div>
+                <div class="text-center">
+                    <h2>Contact me!</h2>
+                    <!-- Star + line -->
+                    <ul class="star_line list-inline"> 
+                        <li class="line"></li>
+                        <li><i class="fas fa-star"></i></li> 
+                        <li class="line"></li>
+                    </ul>
                 </div>
 
-                <!-- List client info -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <ul class="list-inline">
-                            <li>Name</li>
-                            <li>Address</li>
-                            <li>Phone Number</li>
-                            <li>Message</li>
-                        </ul>
+                <!-- Form -->
+                <form id="contact-info" action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
                     </div>
-                    <!-- Button -->
-                    <div class="col-xs-12">
-                        <button type="button" class="btn btn-default">Send</button>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                </form>
+
+                <!-- Button -->
+                <button type="button" class="btn btn-default">Send</button>
             </div>
         </section>
     </main>
