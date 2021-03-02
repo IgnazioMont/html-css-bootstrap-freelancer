@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- My Style -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Start bootstrap</title>
+    <title>My Bootstrap</title>
 </head>
 
 
@@ -18,26 +21,36 @@
 
         <!-- Menu -->
         <div class="container">
-            <div class="row">
+            <div class="wrapper">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-xs-6">
+                        <p class="text-uppercase">Start bootstrap</p>
+                    </div>
 
-                <!-- Logo -->
-                <div class="col-xs-6">
-                    col-left
-                </div>
-
-                <!-- Menu + burger -->
-                <div class="col-xs-6">
-                    <div class="row">
-                        <!-- Menu right -->
-                        <div class="col-xs-12 hidden-xs">
-                            <div class="menu">
-                                menu
+                    <!-- Menu + burger -->
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <!-- Menu right -->
+                            <div class="col-xs-12 hidden-xs">
+                                <ul class="menu text-right list-inline">
+                                    <li>
+                                        <a class="text-uppercase" href="#">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase" href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase" href="#">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <!-- Burger -->
-                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                            <div class="burger">
-                                burger menu
+
+                            <!-- Burger -->
+                            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                                <div class="burger text-right">
+                                    <i class="fas fa-bars"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -46,17 +59,21 @@
         </div>
 
         <!-- Jumbotron -->
-        <div class="jumbotron text-centered">
+        <div class="jumbotron color-sec text-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <!-- Centered contents -->
-                        <img src="#" alt="Profile">
-                        <h1>Start bootstrap</h1>
-                        <div class="star_line"> star + line</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum doloremque dolorem necessitatibus praesentium rem harum aliquam neque nesciunt!</p>
-                    </div>
+                <!-- Centered contents -->
+                <div class="profile">
+                    <img src="img/avatar.svg" alt="Profile">
                 </div>
+                <h1 class="text-uppercase">Start bootstrap</h1>
+                <!-- Star + line -->
+                <ul class="star_line list-inline"> 
+                    <li class="line"></li>
+                    <li><i class="fas fa-star"></i></li> 
+                    <li class="line"></li>
+                </ul>
+                <!-- works -->
+                <h3 class="text-uppercase">Graphic artist - web designer - illustrator</h3>
             </div>
         </div>
     </header>
@@ -64,13 +81,18 @@
     <!-- MAIN -->
     <main>
         <!-- Portfolio -->
-        <section class="portfolio">
+        <section class="portfolio text-center">
             <div class="container">
                 <!-- Title centered -->
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>PORTFOLIO</h2>
-                        <div class="star_line"> star + line</div>
+                        <!-- Star + line -->
+                        <ul class="star_line list-inline"> 
+                            <li class="line"></li>
+                            <li><i class="fas fa-star"></i></li> 
+                            <li class="line"></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -78,32 +100,32 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 1</div>
+                            <img class="img-responsive" src="img/cabin.png" alt="Cabin">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 2</div>
+                            <img class="img-responsive" src="img/cake.png" alt="Cake">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 3</div>
+                            <img class="img-responsive" src="img/circus.png" alt="Circus">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 4</div>
+                            <img class="img-responsive" src="img/game.png" alt="Game">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 5</div>
+                            <img class="img-responsive" src="img/safe.png" alt="Safe">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="boxes">
-                            <div>IMG 6</div>
+                            <img class="img-responsive" src="img/submarine.png" alt="Submarine">
                         </div>
                     </div>
                 </div>
@@ -112,50 +134,56 @@
         </section>
 
         <!-- About -->
-        <section class="about text-centered">
+        <section class="about color-sec text-center">
             <div class="container">
                 <!-- Title centered -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2>ABOUT</h2>
-                        <div class="star_line"> star + line</div>
-                    </div>
-                </div>
+                <h2>ABOUT</h2>
+                <!-- Star + line -->
+                <ul class="star_line list-inline"> 
+                    <li class="line"></li>
+                    <li><i class="fas fa-star"></i></li> 
+                    <li class="line"></li>
+                </ul>
 
                 <!-- Text -->
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quis asperiores omnis ut, laborum id aut eius architecto delectus sit placeat repellat incidunt! Quia cupiditate molestias quibusdam iusto rem animi.</p>
+                            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quis asperiores omnis ut, laborum id aut eius architecto delectus sit placeat repellat incidunt! Quia cupiditate molestias quibusdam iusto rem animi.</p>
+                            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                         </div>
                     </div>
                     <div class="col-xs-12">
-                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-default"><i class="fas fa-download"></i> Download</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact me -->
-        <section class="contact">
+        <section class="contact text-center">
             <div class="container">
                 <!-- Title centered -->
                 <div class="row">
-                    <div class="col-xs-12 centered">
+                    <div class="col-xs-12">
                         <h2>Contact me!</h2>
-                        <div class="star_line"> star + line</div>
+                        <!-- Star + line -->
+                        <ul class="star_line list-inline"> 
+                            <li class="line"></li>
+                            <li><i class="fas fa-star"></i></li> 
+                            <li class="line"></li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- List client info -->
                 <div class="row">
                     <div class="col-xs-12">
-                        <ul>
+                        <ul class="list-inline">
                             <li>Name</li>
                             <li>Address</li>
                             <li>Phone Number</li>
@@ -164,7 +192,7 @@
                     </div>
                     <!-- Button -->
                     <div class="col-xs-12">
-                        <button type="button" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-default">Send</button>
                     </div>
                 </div>
             </div>
@@ -172,7 +200,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="text-center">
         <div id="row-top">
             <div class="container">
                 <div class="row">
